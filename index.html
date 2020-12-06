@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+</head>
+
+<body>
+
+    <nav class="navigation">
+        <div class="nav-brand">translator</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a href="/#1" id="britishAccentSelect" class="link link-active">British</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="/#2" id="germanAccentSelect" class="link link-active">German</a>
+            </li>
+            
+        </ul>
+    </nav>
+    <div class="container british" id="british">
+        <header class="header">
+            <h3>English to British Accent</h3>
+        </header>
+        <div class="container-center">
+
+            <textarea id="input-div-british" placeholder="Enter the text to convert to british accent" class="textarea"></textarea>
+            <button class="button" id="button-translate-british">Translate</button>
+            <div class="output-div" id="output-div-british"> 😊 Output will appear here 😊 </div>
+
+        </div>
+        <footer class="footer">
+            <div class="footer-header">
+                about
+            </div>
+            <div class="footer-content">
+                Convert from US English to UK (British) English spelling. Very useful for converting US English documents to UK English documents.
+            </div>
+
+        </footer>
+    </div>
+    
+    
+    <div class="container german" id="german" style="display: none;">
+        <header class="header">
+            <h3>English to German Accent</h3>
+        </header>
+        <div class="container-center">
+
+            <textarea id="input-div-german" placeholder="Enter the text to convert to german accent" class="textarea"></textarea>
+            <button class="button" id="button-translate-german">Translate</button>
+            <div class="output-div" id="output-div-german"> 😊 Output will appear here 😊 </div>
+
+        </div>
+        <footer class="footer">
+            <div class="footer-header">
+                about
+            </div>
+            <div class="footer-content">
+
+                Convert from English to German Accent. To speak in German Accent you’ll need to modify some core consonant and vowel sounds to make your speech sound more authentically Geman.
+            </div>
+
+        </footer>
+    </div>
+
+    <!-- <div class="container irish" id="#3">
+        <header class="header">
+            <h3>English to Irish accent</h3>
+        </header>
+        <div class="container-center">
+
+            <textarea placeholder="Enter the text to convert to irish accent" class="textarea"></textarea>
+            <button class="button" id="button-translate-irish">Translate</button>
+            <div class="output-div" id="output-div-irish"> 😊 Output will appear here 😊 </div>
+
+        </div>
+        <footer class="footer">
+            <div class="footer-header">
+                about
+            </div>
+             <div class="footer-content">
+                
+            </div>
+
+        </footer>
+    </div> -->
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
