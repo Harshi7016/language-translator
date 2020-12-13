@@ -11,6 +11,11 @@ body{
     margin: 0rem;
     padding: 0rem;
     background-color: var(--base-blue);
+    background-image: 
+    url('./im-196660.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
 }
 
 .container {
@@ -19,10 +24,13 @@ body{
 
 .container-center {
     max-width: 500px;
+    min-height: 56vh;
     margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    
 }
 
 /* nav changes */
@@ -73,10 +81,11 @@ body{
 /*textarea*/
 
 .textarea{
-    width: 80%;
+    width: 74%;
     height: 10vh;
-    margin: 1rem 0;
+    margin: 1rem auto;
     padding: 2rem 2rem;
+    border-radius: 10px;
 }
 
 .button {
@@ -90,14 +99,15 @@ body{
 }
 
 .output-div{
-    width: 80%;
+    width: 74%;
     height: 10vh;
-    margin: 1rem 0;
+    margin: 1rem auto;
     padding: 2rem 2rem;
     display: flex;
     justify-content: center;
     border: 1px solid grey;
     background-color: white;
+    border-radius: 10px;
 }
 
 .footer {
@@ -122,7 +132,15 @@ body{
 .header {
     text-align: center;
 }
+.header-primary{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.95rem 2rem;
+    color: hsl(0, 0%, 100%);
+    
 
+}
 
 .footer .footer-header {
     font-weight: bold;
@@ -136,4 +154,20 @@ body{
     padding: 0rem 1rem;
     margin: 1rem 1rem;
     justify-content: center;
+}
+
+.british-background{
+    background-image: 
+    url('./im-196660.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+
+.german-background{
+    background-image: 
+    url('./im-196662.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
 }

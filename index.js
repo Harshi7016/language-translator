@@ -26,13 +26,14 @@ const britishDivActive = () => {
   console.log('click');
   germanAccentDiv.style.display = 'none';
   britishAccentDiv.style.display = 'block';
-  document.body.style.backgroundImage =
-    'url(`https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png`)';
+  document.body.classList.remove('german-background');
+  document.body.classList.add('british-background');
 };
 const germanDivActive = () => {
   console.log('click');
   germanAccentDiv.style.display = 'block';
   britishAccentDiv.style.display = 'none';
+  document.body.classList.add('german-background');
 };
 
 britishAccentSelect.addEventListener('click', britishDivActive);
